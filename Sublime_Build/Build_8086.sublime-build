@@ -1,0 +1,9 @@
+{
+ 
+    "shell_cmd":"F:/Progroming/Assemble/start.bat $file_base_name", 
+    "file_regex": "^(..[^:]*):([0-9]+):?([0-9]+)?:? (.*)$",
+    "working_dir": "${file_path}",
+    "selector": "source.asm.x86_64",
+    "encoding": "cp936",
+
+}
