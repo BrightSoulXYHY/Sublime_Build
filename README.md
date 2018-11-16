@@ -1,5 +1,9 @@
 # Sublime_Build
+## 更新
+2018-11-16 18:40:31
+增加8086汇编语言的Debug模式，提示保存信息
 
+---
 虽然网上已有不少关于[sublime编译系统的教程](https://blog.qiujinfeng.com/archives/making-Sublime-Text-cplusplus-IDE.html)，但他们都没有解决python无法输入，c/c++文件编译无报错无回显等问题。
 
 自定义Sublime的编译系统，完美解决python编译无法输入，C++编译无法报错等问题（基于VS2017）。并设置了8086的编译。
