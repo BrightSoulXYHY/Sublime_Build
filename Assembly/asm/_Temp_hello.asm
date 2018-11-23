@@ -1,0 +1,30 @@
+DATA  SEGMENT
+     STRING  DB  47h,'ello World!',13,10,'$'
+DATA  ENDS
+
+
+STACK SEGMENT STACK
+STAPN DB 20 DUP(?)
+TOP EQU LENGTH STAPN
+STACK ENDS
+
+CODE  SEGMENT
+     ASSUME    CS:CODE,DS:DATA,SS:STACK
+MAIN PROC
+START:
+        MOV AX,DATA
+        MOV DS,AX
+        
+        LEA DX,STRING
+        MOV AH,9
+        INT 21H
+        
+        
+
+        MOV AH,4CH
+        INT 21H
+MAIN ENDP
+CODE  ENDS
+    END   MAIN
+
+
