@@ -1,0 +1,26 @@
+{
+    "configurations": [
+        {
+            "name": "Win32",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "D:/SoftWare/Keil_v5/C51/INC/**"
+            ],
+            "defines": [
+                "sbit=char",
+                "sfr=char",
+                "bit=char",
+                "FOSC_160000",
+                "interrupt 2 =",
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ],
+            "intelliSenseMode": "msvc-x64",
+            "compilerPath": "D:\\SoftWare\\MinGW\\bin\\gcc.exe",
+            "cStandard": "c11",
+            "cppStandard": "c++14"
+        }
+    ],
+    "version": 4
+}
