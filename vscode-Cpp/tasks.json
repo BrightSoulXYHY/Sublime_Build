@@ -4,14 +4,11 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "build",
+            "label": "Single File",
             "type": "shell",
             "command": "F:/Progroming/_Path/build_cpp_vscode.bat",
             "args": [
-                // Ask msbuild to generate full paths for file names.
-                // "/property:GenerateFullPaths=true",
-                // "/t:build"
-                "${fileBasenameNoExtension}",
+                "${fileBasenameNoExtension}"
             ],
             "options": {
                 "cwd": "${fileDirname}"
@@ -22,10 +19,49 @@
             },
             "presentation": {
                 "reveal": "always",
-                "focus": true,
+                "focus": true
             },
-            // Use the standard MS compiler pattern to detect errors, warnings and infos
             "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "Multi",
+            "type": "shell",
+            "command": "F:/Progroming/_Path/build_cpp_multi.bat",
+            "args": [
+                "${fileBasenameNoExtension}"
+            ],
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "reveal": "always",
+                "focus": true
+            },
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "Clean",
+            "type": "shell",
+            "command": "F:/Progroming/BashShell/re/Clean.bat",
+            "args": [
+                "${fileDirname}"
+            ],
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "reveal": "always",
+                "focus": true
+            },
+            "problemMatcher": []
         }
     ]
 }
